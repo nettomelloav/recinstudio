@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
-    <link rel="stylesheet" href="assets/site.css?v=0.22.2">
+    <link rel="stylesheet" href="assets/site.css?v=0.22.2-1">
 </head>
 <body>
 
@@ -44,7 +44,7 @@
                 <b>safe zones</b> das redes antes de renderizar.</p>
             <div class="ctas">
                 <a class="botao" href="#comprar">Comprar</a>
-                <a class="botao fantasma" href="#modulos">Ver os módulos</a>
+                <a class="botao fantasma" href="#em-acao">Ver em ação</a>
             </div>
             <ul class="mini-info">
                 <li><b>Licença</b> vitalícia, sem mensalidade</li>
@@ -108,10 +108,26 @@
         </div>
     </section>
 
+    <!-- ============================ Em ação ============================ -->
+    <section class="secao" id="em-acao">
+        <div class="cabeca-secao">
+            <span class="kicker">02 — Em ação</span>
+            <h2>Cada módulo em 14 segundos.</h2>
+            <p class="sub-secao">O problema na timeline, o plugin resolvendo e o resultado voltando como faixa nova, sem mexer no original.</p>
+        </div>
+        <div class="acao">
+            <div class="galeria-abas" role="tablist" aria-label="Vídeos dos módulos"><button class="galeria-aba acao-aba" role="tab" data-video="legendas" aria-selected="true" style="--c:#3fc1e6"><span class="mono">01</span> Correção de legendas</button><button class="galeria-aba acao-aba" role="tab" data-video="silencio" aria-selected="false" style="--c:#f5a524"><span class="mono">02</span> Corte de silêncios</button><button class="galeria-aba acao-aba" role="tab" data-video="transcricao" aria-selected="false" style="--c:#a77bf3"><span class="mono">03</span> Transcrição</button><button class="galeria-aba acao-aba" role="tab" data-video="cameras" aria-selected="false" style="--c:#3ecf8e"><span class="mono">04</span> Sync e Multicâmeras</button><button class="galeria-aba acao-aba" role="tab" data-video="som" aria-selected="false" style="--c:#ff6b8a"><span class="mono">05</span> Sound design</button><button class="galeria-aba acao-aba" role="tab" data-video="imagens" aria-selected="false" style="--c:#5b8cff"><span class="mono">06</span> Busca de imagens</button><button class="galeria-aba acao-aba" role="tab" data-video="previa" aria-selected="false" style="--c:#7dd3c0"><span class="mono">07</span> Prévia para redes</button></div>
+            <figure class="acao-quadro">
+                <video id="videoAcao" src="assets/videos/legendas-16x9.mp4" poster="assets/videos/legendas-16x9.jpg" muted playsinline loop controls preload="none" width="1280" height="720" aria-label="Vídeo do módulo em ação"></video>
+            </figure>
+            <p class="acao-nota">Ative o som no player para ouvir a música e os efeitos.</p>
+        </div>
+    </section>
+
     <!-- ============================ Por dentro ============================ -->
     <section class="secao">
         <div class="cabeca-secao">
-            <span class="kicker">02 — Por dentro</span>
+            <span class="kicker">03 — Por dentro</span>
             <h2>Você revisa. O plugin faz o braçal.</h2>
             <p class="sub-secao">Veja cada módulo por dentro. Nas correções, cada sugestão mostra de onde veio e só entra se você aprovar;
                 em tudo, o resultado vai para uma timeline ou faixa nova.</p>
@@ -125,7 +141,7 @@
     <!-- ============================ Instalar ============================ -->
     <section class="secao" id="instalar">
         <div class="cabeca-secao">
-            <span class="kicker">03 — Instalar</span>
+            <span class="kicker">04 — Instalar</span>
             <h2>Instale uma vez. Depois é só abrir pelo DaVinci.</h2>
         </div>
         <div class="so-abas" role="tablist">
@@ -170,7 +186,7 @@
     <!-- ============================ Perguntas ============================ -->
     <section class="secao" id="perguntas">
         <div class="cabeca-secao">
-            <span class="kicker">04 — Perguntas</span>
+            <span class="kicker">05 — Perguntas</span>
             <h2>Perguntas frequentes</h2>
         </div>
         <div class="faq">
@@ -210,7 +226,7 @@
     <section class="secao" id="comprar">
         <div class="cafe">
             <div class="cafe-texto">
-                <span class="kicker">05 — Comprar</span>
+                <span class="kicker">06 — Comprar</span>
                 <h2>Rec In Studio por <span class="grad">R$ 97,00</span>.</h2>
                 <p>Pagamento único via Pix. Licença vitalícia, no seu nome, sem mensalidade.</p>
                 <ol class="compra-passos">
@@ -253,8 +269,8 @@
         sem vínculo com a Blackmagic Design. TikTok, Instagram e YouTube são marcas dos seus donos.</p>
 </footer>
 
-<script src="assets/config.js?v=0.22.2"></script>
-<script src="assets/pix.js?v=0.22.2"></script>
-<script src="assets/site.js?v=0.22.2"></script>
+<script src="assets/config.js?v=0.22.2-1"></script>
+<script src="assets/pix.js?v=0.22.2-1"></script>
+<script src="assets/site.js?v=0.22.2-1"></script>
 </body>
 </html>

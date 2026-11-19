@@ -24,11 +24,35 @@
     if ($('#versaoRodape') && cfg.versao) $('#versaoRodape').textContent = 'versão ' + cfg.versao;
 
     // ---------------------------------------------------------------- galeria "Por dentro": uma tela por módulo
-    const abasGaleria = document.querySelectorAll('.galeria-aba');
+    const abasGaleria = document.querySelectorAll('.galeria-aba:not(.acao-aba)');
     abasGaleria.forEach((b) => b.addEventListener('click', () => {
         abasGaleria.forEach((x) => x.setAttribute('aria-selected', String(x === b)));
         document.querySelectorAll('.galeria-tela').forEach((f) => { f.hidden = f.dataset.tela !== b.dataset.tela; });
     }));
+
+    // ---------------------------------------------------------------- Em ação: um vídeo por módulo (vertical no celular)
+    const videoAcao = $('#videoAcao');
+    if (videoAcao) {
+        const celular = window.matchMedia('(max-width: 640px)');
+        let modulo = 'legendas', visivel = false;
+        const carregar = () => {
+            const f = celular.matches ? '9x16' : '16x9';
+            videoAcao.poster = `assets/videos/${modulo}-${f}.jpg`;
+            videoAcao.src = `assets/videos/${modulo}-${f}.mp4`;
+            if (visivel) videoAcao.play().catch(() => {});
+        };
+        const abasAcao = document.querySelectorAll('.acao-aba');
+        abasAcao.forEach((b) => b.addEventListener('click', () => {
+            abasAcao.forEach((x) => x.setAttribute('aria-selected', String(x === b)));
+            modulo = b.dataset.video; carregar();
+        }));
+        celular.addEventListener('change', carregar);
+        new IntersectionObserver(([e]) => {
+            visivel = e.isIntersecting;
+            if (visivel) videoAcao.play().catch(() => {}); else videoAcao.pause();
+        }, { threshold: 0.4 }).observe(videoAcao);
+        carregar();
+    }
 
     // ---------------------------------------------------------------- WhatsApp do comprovante
     if ($('#linkWhats') && cfg.whatsapp) {

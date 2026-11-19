@@ -347,3 +347,12 @@ h2 { font-size: clamp(28px, 3.6vw, 42px); line-height: 1.12; letter-spacing: -.0
 .galeria-aba[aria-selected="true"] { color: var(--texto); border-color: var(--c); background: color-mix(in srgb, var(--c) 14%, var(--painel)); }
 .galeria-tela { max-width: 1080px; }
 @media (max-width: 640px) { .galeria-aba { font-size: 13px; padding: 7px 11px; } }
+
+/* ---------------------------------------------------------------- Em ação: vídeo de cada módulo */
+.acao-quadro { margin: 0; max-width: 1080px; border: 1px solid var(--borda); border-radius: var(--raio); overflow: hidden; background: #17181b; }
+.acao-quadro video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #17181b; }
+.acao-nota { margin: 10px 0 0; font-size: 13px; color: var(--suave); }
+@media (max-width: 640px) {
+    .acao-quadro { max-width: 360px; margin: 0 auto; }
+    .acao-quadro video { aspect-ratio: 9 / 16; }
+}
