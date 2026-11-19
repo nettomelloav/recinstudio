@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Rec In Studio">
+  <!-- Ponto de Rec atravessado por um corte em diagonal: metade Rec (vermelho), metade criação (vermelho → ciano). -->
+  <defs>
+    <linearGradient id="faisca" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff3b30"/>
+      <stop offset=".55" stop-color="#ff7a59"/>
+      <stop offset="1" stop-color="#3fc1e6"/>
+    </linearGradient>
+    <clipPath id="acima"><polygon points="0,0 48,0 0,48"/></clipPath>
+    <clipPath id="abaixo"><polygon points="48,0 48,48 0,48"/></clipPath>
+  </defs>
+  <g clip-path="url(#acima)"><circle cx="22.5" cy="22.5" r="15" fill="#ff3b30"/></g>
+  <g clip-path="url(#abaixo)"><circle cx="25.5" cy="25.5" r="15" fill="url(#faisca)"/></g>
+</svg>

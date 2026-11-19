@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rec In Studio — do Rec à entrega, dentro do DaVinci Resolve</title>
+    <meta name="description" content="Plugin para o DaVinci Resolve Studio: corrige legendas com o glossário do cliente, corta silêncios, edita pela transcrição, sincroniza câmeras, mixa o áudio, busca imagens de apoio e mostra o vídeo com as safe zones das redes.">
+    <meta property="og:title" content="Rec In Studio — do Rec à entrega, dentro do DaVinci Resolve">
+    <meta property="og:description" content="7 módulos de edição dentro do DaVinci Resolve Studio. Tudo em timeline nova: o original nunca muda.">
+    <meta property="og:image" content="assets/app-inicio.jpg?v=0.22.0">
+    <meta name="theme-color" content="#121417">
+    <link rel="icon" type="image/png" href="assets/favicon.png?v=0.22.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="assets/site.css?v=0.22.0">
+</head>
+<body>
+
+<!-- ============================ Navegação ============================ -->
+<header class="nav">
+    <a class="marca" href="#topo" aria-label="Rec In Studio">
+        <img class="logo-svg" src="assets/logo.svg?v=0.22.0" alt="" width="30" height="30">
+        <span>Rec In <b>Studio</b></span>
+    </a>
+    <nav class="links">
+        <a href="#destaque">Timeline nova</a>
+        <a href="#modulos">Módulos</a>
+        <a href="#instalar">Instalar</a>
+        <a href="#perguntas">Perguntas</a>
+        <a href="#comprar">Preço</a>
+    </nav>
+    <a class="botao botao-pequeno" href="#comprar">Comprar</a>
+</header>
+
+<main id="topo">
+    <!-- ============================ Hero ============================ -->
+    <section class="hero">
+        <div class="hero-texto">
+            <span class="selo"><span class="led"></span> Plugin para DaVinci Resolve Studio · Mac</span>
+            <h1>Do Rec à <span class="grad">entrega</span>, dentro do DaVinci Resolve.</h1>
+            <p class="lead">O Rec In Studio abre ao lado da sua timeline e tira o trabalho repetitivo da edição:
+                <b>corrige legendas</b> com o glossário do cliente, <b>corta silêncios</b>, edita pela <b>transcrição</b>,
+                <b>sincroniza câmeras</b>, mixa o <b>áudio</b>, busca <b>imagens de apoio</b> e mostra o vídeo com as
+                <b>safe zones</b> das redes antes de renderizar.</p>
+            <div class="ctas">
+                <a class="botao" href="#comprar">Comprar</a>
+                <a class="botao fantasma" href="#modulos">Ver os módulos</a>
+            </div>
+            <ul class="mini-info">
+                <li><b>Licença</b> vitalícia, sem mensalidade</li>
+                <li><b>7</b> módulos</li>
+                <li><b>Original intocado</b>: sempre timeline nova</li>
+                <li>Em português</li>
+            </ul>
+        </div>
+        <figure class="vitrine">
+            <img class="icone-flutuante" src="assets/icone.png?v=0.22.0" alt="Ícone do Rec In Studio" width="180" height="180">
+            <div class="janela">
+                <div class="barra-janela"><span class="bolinhas"><i></i><i></i><i></i></span><span>Rec In Studio · Workflow Integrations</span></div>
+                <img src="assets/app-inicio.jpg?v=0.22.0" alt="Tela inicial do Rec In Studio: projeto e timeline do DaVinci e os 7 módulos" width="2000" height="1255">
+            </div>
+        </figure>
+    </section>
+
+    <!-- ============================ Destaque: timeline nova ============================ -->
+    <section class="secao destaque" id="destaque">
+        <div class="destaque-grade">
+            <div class="destaque-texto">
+                <span class="kicker">Destaque — Seguro por padrão</span>
+                <h2>Tudo vira uma <span class="grad">timeline nova</span>.</h2>
+                <p class="sub-secao">O Rec In Studio nunca mexe no seu material original. Cada ação cria uma cópia da
+                    timeline (“· sem silêncios”, “· mixada”, “· editada”…) ou uma faixa nova, e você compara antes de seguir.</p>
+                <ul class="lista-check">
+                    <li><b>Legendas corrigidas</b> entram numa faixa nova, com cada troca revisada por você.</li>
+                    <li><b>Cortes de silêncio e de vícios de linguagem</b> acontecem na cópia; a trilha protegida segue intacta.</li>
+                    <li><b>Mixagem por destino</b> (YouTube, podcast, TV, streaming) numa timeline “· mixada”.</li>
+                    <li><b>Imagens de apoio</b> numa faixa “Apoio”, com o arquivo de créditos pronto.</li>
+                </ul>
+            </div>
+            <figure class="timeline-demo" aria-label="Ilustração de uma timeline com faixas de vídeo, apoio, áudio e legendas, e o cursor percorrendo">
+                <div class="regua"><span>01:00:00:00</span><span>01:00:30:00</span><span>01:01:00:00</span><span>01:01:30:00</span></div>
+                <div class="faixa"><span class="rot">ST1 · legendas corrigidas</span>
+                    <span class="clipe" style="--c:#3fc1e6;--p:2">Bom dia, eu sou…</span><span class="clipe" style="--c:#3fc1e6;--p:2">A gente torra…</span><span class="clipe" style="--c:#3fc1e6;--p:3">Vamos mostrar…</span><span class="clipe" style="--c:#3fc1e6;--p:2">Sem exceção.</span></div>
+                <div class="faixa"><span class="rot">V2 · Apoio</span>
+                    <span class="clipe" style="--c:transparent;--p:1"></span><span class="clipe" style="--c:#5b8cff;--p:2">café.jpg</span><span class="clipe" style="--c:transparent;--p:2"></span><span class="clipe" style="--c:#5b8cff;--p:2">torra.mp4</span><span class="clipe" style="--c:transparent;--p:1"></span></div>
+                <div class="faixa"><span class="rot">V1 · entrevista · sem silêncios</span>
+                    <span class="clipe" style="--c:#f5a524;--p:3">CAM A</span><span class="clipe" style="--c:#3ecf8e;--p:2">CAM B</span><span class="clipe" style="--c:#f5a524;--p:2">CAM A</span><span class="clipe" style="--c:#3ecf8e;--p:2">CAM B</span></div>
+                <div class="faixa"><span class="rot">A1 · fala −14 LUFS · A2 · trilha −32 LUFS</span>
+                    <span class="clipe" style="--c:#ff6b8a;--p:9">fala</span></div>
+                <span class="cabeca"></span>
+            </figure>
+        </div>
+    </section>
+
+    <!-- ============================ Módulos ============================ -->
+    <section class="secao" id="modulos">
+        <div class="cabeca-secao">
+            <span class="kicker">01 — Módulos</span>
+            <h2>Sete ferramentas, uma janela.</h2>
+            <p class="sub-secao">Abra em <i>Workspace › Workflow Integrations › Rec In Studio</i>. O plugin lê a timeline aberta e trabalha junto com o DaVinci.</p>
+        </div>
+        <div class="modulos-lista">
+            <article class="modulo-card" style="--c:#3fc1e6"><span class="mod-num">01</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M7 11h4M13 11h4M7 15h6M15 15h2"/></svg>
+                <h3>Correção de legendas</h3>
+                <p>Glossário por cliente, dicionário com 248 correções prontas e corretor ortográfico em português.</p>
+                <ul><li>Você aprova cada troca</li><li>Aprende com as correções aprovadas</li><li>Busca termos em projetos antigos</li></ul></article>
+            <article class="modulo-card" style="--c:#f5a524"><span class="mod-num">02</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="6.5" cy="7" r="2.5"/><circle cx="6.5" cy="17" r="2.5"/><path d="M8.6 8.4 20 17M8.6 15.6 20 7"/></svg>
+                <h3>Corte de silêncios</h3>
+                <p>Remove pausas e respiros numa timeline nova, com intensidade suave, equilibrada ou agressiva.</p>
+                <ul><li>Protege a trilha e as faixas que você marcar</li><li>Mostra quanto tempo saiu</li></ul></article>
+            <article class="modulo-card" style="--c:#a77bf3"><span class="mod-num">03</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 6h14M5 10h14M5 14h9M5 18h6"/><path d="m16 12 3 3-3 3"/></svg>
+                <h3>Ferramentas da transcrição</h3>
+                <p>Transcrição navegável, edição pelo texto (clique na palavra para tirar) e remoção de vícios de linguagem.</p>
+                <ul><li>Marcadores pelas frases</li><li>Exporta TXT, DOCX e SRT</li></ul></article>
+            <article class="modulo-card" style="--c:#3ecf8e"><span class="mod-num">04</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="7" width="11" height="10" rx="2"/><path d="m13.5 10.5 4-2.5v8l-4-2.5"/><path d="M20.5 9v6"/></svg>
+                <h3>Sync Audio e Multicâmeras</h3>
+                <p>Sincroniza o gravador externo pelo som, cria o multicâmera e faz a troca automática de câmera pela fala.</p>
+                <ul><li>Plano aberto nas pausas</li><li>Vira cortes normais, se quiser</li></ul></article>
+            <article class="modulo-card" style="--c:#ff6b8a"><span class="mod-num">05</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4v16M12 4v16M18 4v16"/><rect x="4" y="13" width="4" height="3" rx="1"/><rect x="10" y="7" width="4" height="3" rx="1"/><rect x="16" y="11" width="4" height="3" rx="1"/></svg>
+                <h3>Sound design</h3>
+                <p>Loudness por destino (YouTube −14, podcast −16, TV −23, streaming −27) e trilha abaixo da fala.</p>
+                <ul><li>Efeitos sonoros com prévia da onda</li><li>Duração e tom de cada efeito</li></ul></article>
+            <article class="modulo-card" style="--c:#5b8cff"><span class="mod-num">06</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><circle cx="9" cy="10" r="1.8"/><path d="m4 17 5-5 4 4 3-3 4 4"/></svg>
+                <h3>Busca de imagens</h3>
+                <p>Imagens e vídeos de apoio para cada frase, no Pexels, Pixabay, Unsplash e nas suas pastas.</p>
+                <ul><li>Baixa e coloca na faixa “Apoio”</li><li>Arquivo de créditos pronto</li></ul></article>
+            <article class="modulo-card" style="--c:#7dd3c0"><span class="mod-num">07</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.5" width="10" height="19" rx="2.5"/><rect x="9" y="6" width="6" height="10" rx="1" stroke-dasharray="2 1.6"/></svg>
+                <h3>Prévia para redes</h3>
+                <p>O quadro real da timeline com a interface e as safe zones do TikTok, Reels, Stories, Shorts e YouTube.</p>
+                <ul><li>Vertical, horizontal, 4:5 e 1:1</li><li>Todas lado a lado, antes de renderizar</li></ul></article>
+        </div>
+    </section>
+
+    <!-- ============================ Por dentro ============================ -->
+    <section class="secao">
+        <div class="cabeca-secao">
+            <span class="kicker">02 — Por dentro</span>
+            <h2>Você revisa. O plugin faz o braçal.</h2>
+            <p class="sub-secao">Cada sugestão mostra de onde veio (cliente, glossário geral, dicionário ou ortografia) e só entra se você aprovar.
+                Na prévia, veja o mesmo quadro em todas as redes de uma vez.</p>
+        </div>
+        <div class="prints">
+            <figure class="print"><img src="assets/app-legendas.jpg?v=0.22.0" alt="Revisão das legendas com as sugestões do glossário e da ortografia" loading="lazy" width="2000" height="1255"><figcaption>Correção de legendas</figcaption></figure>
+            <figure class="print"><img src="assets/app-previa.jpg?v=0.22.0" alt="Prévia para redes: TikTok, Reels, Stories e Shorts lado a lado com as safe zones" loading="lazy" width="2000" height="1255"><figcaption>Prévia para redes</figcaption></figure>
+        </div>
+    </section>
+
+    <!-- ============================ Instalar ============================ -->
+    <section class="secao" id="instalar">
+        <div class="cabeca-secao">
+            <span class="kicker">03 — Instalar</span>
+            <h2>Instale uma vez. Depois é só abrir pelo DaVinci.</h2>
+        </div>
+        <div class="so-abas" role="tablist">
+            <button class="so-aba" role="tab" data-so="mac" aria-selected="true">Mac</button>
+            <button class="so-aba" role="tab" data-so="win" aria-selected="false">Windows <small>em breve</small></button>
+        </div>
+
+        <div class="so-painel" data-so="mac">
+        <ol class="passos">
+            <li><span class="num">1</span><h3>Baixe e instale</h3>
+                <p>Dê dois cliques no <code>RecInStudio.pkg</code>. Se o macOS disser que não pode abrir: <i>Ajustes do Sistema › Privacidade e Segurança</i> › <b>Abrir Mesmo Assim</b> (o instalador não tem assinatura da Apple).</p></li>
+            <li><span class="num">2</span><h3>Abra no DaVinci</h3>
+                <p>Com o DaVinci Resolve Studio aberto: <i>Workspace › Workflow Integrations</i> › <b>Rec In Studio</b>. Se ele não aparecer, feche e abra o DaVinci de novo.</p></li>
+            <li><span class="num">3</span><h3>Ative</h3>
+                <p>Na tela <b>Ativar o Rec In Studio</b>, cole a chave de licença que você recebeu (começa com <code>RIS1-</code>) e clique em <b>Ativar</b>. Não precisa de internet.</p></li>
+        </ol>
+        <div class="requisitos">
+            <div><span class="kicker">Requisitos</span>
+                <ul>
+                    <li>Mac compatível com o DaVinci Resolve Studio 21</li>
+                    <li>DaVinci Resolve <b>Studio</b> 21 (testado na 21.2)</li>
+                    <li>Internet só para a busca de imagens (chaves gratuitas do Pexels, Pixabay e Unsplash)</li>
+                </ul></div>
+            <div class="terminal" aria-label="Onde o plugin aparece no DaVinci">
+                <div class="barra-term"><span class="bolinhas"><i></i><i></i><i></i></span> DaVinci Resolve Studio</div>
+<pre>Workspace
+  › Workflow Integrations
+      › <span class="ok">Rec In Studio</span>
+<span class="cinza">Desenvolvido por Netto Mello Videomaker</span></pre>
+            </div>
+        </div>
+        </div>
+
+        <div class="so-painel" data-so="win" hidden>
+        <ol class="passos">
+            <li><span class="num">1</span><h3>Em breve</h3>
+                <p>A versão para Windows está em preparação. A mesma chave de licença vai valer no Mac e no Windows: quem comprar agora recebe o instalador do Windows assim que sair.</p></li>
+        </ol>
+        </div>
+    </section>
+
+    <!-- ============================ Perguntas ============================ -->
+    <section class="secao" id="perguntas">
+        <div class="cabeca-secao">
+            <span class="kicker">04 — Perguntas</span>
+            <h2>Perguntas frequentes</h2>
+        </div>
+        <div class="faq">
+            <details><summary>Quanto custa?</summary><p><b>R$ 97,00</b>, pagamento único via Pix. Licença vitalícia, sem mensalidade e sem marca d'água.</p></details>
+            <details><summary>Como recebo a chave de licença?</summary><p>Pague o Pix e mande o comprovante com o seu nome completo pelo WhatsApp. Você recebe a chave, que vai no seu nome, e o link do instalador. No DaVinci, abra o Rec In Studio, cole a chave e clique em <b>Ativar</b>. Não precisa de internet para ativar.</p></details>
+            <details><summary>Ele altera o meu projeto?</summary><p>Não mexe no material original: cada ação cria uma timeline nova ou uma faixa nova (legendas corrigidas, apoio, efeitos). Você compara e decide o que fica.</p></details>
+            <details><summary>Funciona no DaVinci Resolve gratuito?</summary><p>Não. Os plugins de <i>Workflow Integrations</i> e os recursos que o Rec In Studio usa (como a transcrição) são do DaVinci Resolve <b>Studio</b>.</p></details>
+            <details><summary>Funciona no Windows?</summary><p>Ainda não: a versão para Windows está em preparação. Quando sair, a mesma chave vale no Mac e no Windows.</p></details>
+            <details><summary>Precisa de internet?</summary><p>Só para a <b>busca de imagens</b> nos bancos online (Pexels, Pixabay e Unsplash, com chaves gratuitas que você cria). A ativação, a correção, a transcrição e os outros módulos funcionam sem internet.</p></details>
+            <details><summary>De onde vem a transcrição?</summary><p>Do próprio DaVinci Resolve Studio. O Rec In Studio usa a transcrição da timeline para editar pelo texto, criar marcadores, revisar com o glossário e exportar.</p></details>
+            <details><summary>O corretor entende português?</summary><p>Sim. Ele usa o dicionário VERO (o mesmo do LibreOffice) e corrige a palavra com a menor mudança, pensando em fala: “vamo” vira “vamos”, “analizar” vira “analisar”. Nomes próprios e siglas não são apontados.</p></details>
+            <details><summary>E as atualizações?</summary><p>As versões novas saem no mesmo link de download, e a sua chave continua valendo.</p></details>
+        </div>
+    </section>
+
+    <!-- ============================ Download ============================ -->
+    <section class="baixar" id="baixar">
+        <div class="baixar-conteudo">
+            <img src="assets/icone.png?v=0.22.0" alt="" width="120" height="120" class="icone-baixar">
+            <h2>Já comprou? Baixe aqui.</h2>
+            <p>Rec In Studio <span id="versao">v0.22.0</span> · a chave vale no Mac e, quando sair, no Windows</p>
+            <div class="downloads">
+                <a class="botao botao-grande" data-download="mac" href="#">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 21h16"/></svg>
+                    Baixar para Mac
+                </a>
+                <span class="botao botao-grande fantasma" aria-disabled="true">Windows <small>em breve</small></span>
+            </div>
+            <p class="miudo"><b>Mac:</b> RecInStudio.pkg (~20 MB) · DaVinci Resolve Studio 21.<br>
+                O instalador não tem assinatura da Apple: no primeiro uso, libere em Privacidade e Segurança.
+                <a id="linkCodigo" href="#">Guia e versões anteriores</a></p>
+            <p class="convite-cafe">Ainda não tem a chave? <a href="#comprar">Comprar</a></p>
+        </div>
+    </section>
+
+    <!-- ============================ Comprar (Pix) ============================ -->
+    <section class="secao" id="comprar">
+        <div class="cafe">
+            <div class="cafe-texto">
+                <span class="kicker">05 — Comprar</span>
+                <h2>Rec In Studio por <span class="grad">R$ 97,00</span>.</h2>
+                <p>Pagamento único via Pix. Licença vitalícia, no seu nome, sem mensalidade.</p>
+                <ol class="compra-passos">
+                    <li><b>Pague o Pix</b> de R$ 97,00: QR Code ao lado ou Pix copia e cola (o valor já vem preenchido).</li>
+                    <li><b>Mande o comprovante</b> com o seu nome completo pelo WhatsApp.</li>
+                    <li><b>Receba a chave</b> e o link do instalador. Abra o Rec In Studio no DaVinci, cole a chave e clique em Ativar.</li>
+                </ol>
+                <div class="pix-chave">
+                    <span class="rotulo-pix">Chave Pix (CPF)</span>
+                    <strong id="pixChave">997.502.011-91</strong>
+                    <span class="pix-nome">Recebedor: <b id="pixNome">Claro Barbosa</b></span>
+                </div>
+                <div class="pix-botoes">
+                    <button class="botao" id="copiarPix" type="button">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3"/></svg>
+                        Copiar Pix copia e cola
+                    </button>
+                    <button class="botao fantasma" id="copiarChave" type="button">Copiar só a chave</button>
+                    <a class="botao botao-whats" id="linkWhats" href="https://wa.me/5562992844088" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l1.3-3.9A8 8 0 1 1 8 19z"/></svg>
+                        Enviar comprovante
+                    </a>
+                </div>
+                <p class="pix-aviso" id="pixAviso" role="status" aria-live="polite">No celular: copie e cole em <i>Pix › Pix copia e cola</i> no app do seu banco.</p>
+            </div>
+            <figure class="pix-qr">
+                <img src="assets/pix-qr.svg?v=0.22.0" alt="QR Code Pix de R$ 97,00 para comprar o Rec In Studio" width="264" height="264">
+                <figcaption>Aponte a câmera do app do banco</figcaption>
+            </figure>
+        </div>
+    </section>
+</main>
+
+<footer class="rodape">
+    <div>
+        <span class="marca"><img class="logo-svg" src="assets/logo.svg?v=0.22.0" alt="" width="26" height="26"><span>Rec In <b>Studio</b></span></span>
+        <p>Desenvolvido por <b>Netto Mello Videomaker</b> · <span id="versaoRodape">versão 0.22.0</span> · <a href="#comprar">Comprar</a></p>
+    </div>
+    <p class="aviso-legal">DaVinci Resolve é marca da Blackmagic Design. O Rec In Studio é um plugin independente,
+        sem vínculo com a Blackmagic Design. TikTok, Instagram e YouTube são marcas dos seus donos.</p>
+</footer>
+
+<script src="assets/config.js?v=0.22.0"></script>
+<script src="assets/pix.js?v=0.22.0"></script>
+<script src="assets/site.js?v=0.22.0"></script>
+</body>
+</html>
