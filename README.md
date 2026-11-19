@@ -1,6 +1,6 @@
 # Rec In Studio
 
-**Do Rec à entrega, dentro do DaVinci Resolve.** Plugin para o DaVinci Resolve Studio (R$ 97,00, pagamento único via Pix,
+**Sua pós no piloto automático, dentro do DaVinci Resolve.** Plugin para o DaVinci Resolve Studio (R$ 97,00, pagamento único via Pix,
 licença vitalícia) com 7 módulos: correção de legendas, corte de silêncios, ferramentas da transcrição, sync de áudio e
 multicâmeras, sound design, busca de imagens e prévia para redes com safe zones.
 
