@@ -7,24 +7,23 @@
     <meta name="description" content="Plugin para o DaVinci Resolve Studio: corrige legendas com o glossário do cliente, corta silêncios, edita pela transcrição, sincroniza câmeras, mixa o áudio, busca imagens de apoio e mostra o vídeo com as safe zones das redes.">
     <meta property="og:title" content="Rec In Studio — do Rec à entrega, dentro do DaVinci Resolve">
     <meta property="og:description" content="7 módulos de edição dentro do DaVinci Resolve Studio. Tudo em timeline nova: o original nunca muda.">
-    <meta property="og:image" content="assets/app-inicio.jpg?v=0.22.0">
+    <meta property="og:image" content="assets/app-inicio.jpg?v=0.22.1">
     <meta name="theme-color" content="#121417">
-    <link rel="icon" type="image/png" href="assets/favicon.png?v=0.22.0">
+    <link rel="icon" type="image/png" href="assets/favicon.png?v=0.22.1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
-    <link rel="stylesheet" href="assets/site.css?v=0.22.0">
+    <link rel="stylesheet" href="assets/site.css?v=0.22.1">
 </head>
 <body>
 
 <!-- ============================ Navegação ============================ -->
 <header class="nav">
     <a class="marca" href="#topo" aria-label="Rec In Studio">
-        <img class="logo-svg" src="assets/logo.svg?v=0.22.0" alt="" width="30" height="30">
+        <img class="logo-svg" src="assets/logo.svg?v=0.22.1" alt="" width="30" height="30">
         <span>Rec In <b>Studio</b></span>
     </a>
     <nav class="links">
-        <a href="#destaque">Timeline nova</a>
         <a href="#modulos">Módulos</a>
         <a href="#instalar">Instalar</a>
         <a href="#perguntas">Perguntas</a>
@@ -55,42 +54,12 @@
             </ul>
         </div>
         <figure class="vitrine">
-            <img class="icone-flutuante" src="assets/icone.png?v=0.22.0" alt="Ícone do Rec In Studio" width="180" height="180">
+            <img class="icone-flutuante" src="assets/icone.png?v=0.22.1" alt="Ícone do Rec In Studio" width="180" height="180">
             <div class="janela">
                 <div class="barra-janela"><span class="bolinhas"><i></i><i></i><i></i></span><span>Rec In Studio · Workflow Integrations</span></div>
-                <img src="assets/app-inicio.jpg?v=0.22.0" alt="Tela inicial do Rec In Studio: projeto e timeline do DaVinci e os 7 módulos" width="2000" height="1255">
+                <img src="assets/app-inicio.jpg?v=0.22.1" alt="Tela inicial do Rec In Studio: projeto e timeline do DaVinci e os 7 módulos" width="2000" height="1255">
             </div>
         </figure>
-    </section>
-
-    <!-- ============================ Destaque: timeline nova ============================ -->
-    <section class="secao destaque" id="destaque">
-        <div class="destaque-grade">
-            <div class="destaque-texto">
-                <span class="kicker">Destaque — Seguro por padrão</span>
-                <h2>Tudo vira uma <span class="grad">timeline nova</span>.</h2>
-                <p class="sub-secao">O Rec In Studio nunca mexe no seu material original. Cada ação cria uma cópia da
-                    timeline (“· sem silêncios”, “· mixada”, “· editada”…) ou uma faixa nova, e você compara antes de seguir.</p>
-                <ul class="lista-check">
-                    <li><b>Legendas corrigidas</b> entram numa faixa nova, com cada troca revisada por você.</li>
-                    <li><b>Cortes de silêncio e de vícios de linguagem</b> acontecem na cópia; a trilha protegida segue intacta.</li>
-                    <li><b>Mixagem por destino</b> (YouTube, podcast, TV, streaming) numa timeline “· mixada”.</li>
-                    <li><b>Imagens de apoio</b> numa faixa “Apoio”, com o arquivo de créditos pronto.</li>
-                </ul>
-            </div>
-            <figure class="timeline-demo" aria-label="Ilustração de uma timeline com faixas de vídeo, apoio, áudio e legendas, e o cursor percorrendo">
-                <div class="regua"><span>01:00:00:00</span><span>01:00:30:00</span><span>01:01:00:00</span><span>01:01:30:00</span></div>
-                <div class="faixa"><span class="rot">ST1 · legendas corrigidas</span>
-                    <span class="clipe" style="--c:#3fc1e6;--p:2">Bom dia, eu sou…</span><span class="clipe" style="--c:#3fc1e6;--p:2">A gente torra…</span><span class="clipe" style="--c:#3fc1e6;--p:3">Vamos mostrar…</span><span class="clipe" style="--c:#3fc1e6;--p:2">Sem exceção.</span></div>
-                <div class="faixa"><span class="rot">V2 · Apoio</span>
-                    <span class="clipe" style="--c:transparent;--p:1"></span><span class="clipe" style="--c:#5b8cff;--p:2">café.jpg</span><span class="clipe" style="--c:transparent;--p:2"></span><span class="clipe" style="--c:#5b8cff;--p:2">torra.mp4</span><span class="clipe" style="--c:transparent;--p:1"></span></div>
-                <div class="faixa"><span class="rot">V1 · entrevista · sem silêncios</span>
-                    <span class="clipe" style="--c:#f5a524;--p:3">CAM A</span><span class="clipe" style="--c:#3ecf8e;--p:2">CAM B</span><span class="clipe" style="--c:#f5a524;--p:2">CAM A</span><span class="clipe" style="--c:#3ecf8e;--p:2">CAM B</span></div>
-                <div class="faixa"><span class="rot">A1 · fala −14 LUFS · A2 · trilha −32 LUFS</span>
-                    <span class="clipe" style="--c:#ff6b8a;--p:9">fala</span></div>
-                <span class="cabeca"></span>
-            </figure>
-        </div>
     </section>
 
     <!-- ============================ Módulos ============================ -->
@@ -148,8 +117,8 @@
                 Na prévia, veja o mesmo quadro em todas as redes de uma vez.</p>
         </div>
         <div class="prints">
-            <figure class="print"><img src="assets/app-legendas.jpg?v=0.22.0" alt="Revisão das legendas com as sugestões do glossário e da ortografia" loading="lazy" width="2000" height="1255"><figcaption>Correção de legendas</figcaption></figure>
-            <figure class="print"><img src="assets/app-previa.jpg?v=0.22.0" alt="Prévia para redes: TikTok, Reels, Stories e Shorts lado a lado com as safe zones" loading="lazy" width="2000" height="1255"><figcaption>Prévia para redes</figcaption></figure>
+            <figure class="print"><img src="assets/app-legendas.jpg?v=0.22.1" alt="Revisão das legendas com as sugestões do glossário e da ortografia" loading="lazy" width="2000" height="1255"><figcaption>Correção de legendas</figcaption></figure>
+            <figure class="print"><img src="assets/app-previa.jpg?v=0.22.1" alt="Prévia para redes: TikTok, Reels, Stories e Shorts lado a lado com as safe zones" loading="lazy" width="2000" height="1255"><figcaption>Prévia para redes</figcaption></figure>
         </div>
     </section>
 
@@ -220,9 +189,9 @@
     <!-- ============================ Download ============================ -->
     <section class="baixar" id="baixar">
         <div class="baixar-conteudo">
-            <img src="assets/icone.png?v=0.22.0" alt="" width="120" height="120" class="icone-baixar">
+            <img src="assets/icone.png?v=0.22.1" alt="" width="120" height="120" class="icone-baixar">
             <h2>Já comprou? Baixe aqui.</h2>
-            <p>Rec In Studio <span id="versao">v0.22.0</span> · a chave vale no Mac e, quando sair, no Windows</p>
+            <p>Rec In Studio <span id="versao">v0.22.1</span> · a chave vale no Mac e, quando sair, no Windows</p>
             <div class="downloads">
                 <a class="botao botao-grande" data-download="mac" href="#">
                     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 21h16"/></svg>
@@ -268,7 +237,7 @@
                 <p class="pix-aviso" id="pixAviso" role="status" aria-live="polite">No celular: copie e cole em <i>Pix › Pix copia e cola</i> no app do seu banco.</p>
             </div>
             <figure class="pix-qr">
-                <img src="assets/pix-qr.svg?v=0.22.0" alt="QR Code Pix de R$ 97,00 para comprar o Rec In Studio" width="264" height="264">
+                <img src="assets/pix-qr.svg?v=0.22.1" alt="QR Code Pix de R$ 97,00 para comprar o Rec In Studio" width="264" height="264">
                 <figcaption>Aponte a câmera do app do banco</figcaption>
             </figure>
         </div>
@@ -277,15 +246,15 @@
 
 <footer class="rodape">
     <div>
-        <span class="marca"><img class="logo-svg" src="assets/logo.svg?v=0.22.0" alt="" width="26" height="26"><span>Rec In <b>Studio</b></span></span>
-        <p>Desenvolvido por <b>Netto Mello Videomaker</b> · <span id="versaoRodape">versão 0.22.0</span> · <a href="#comprar">Comprar</a></p>
+        <span class="marca"><img class="logo-svg" src="assets/logo.svg?v=0.22.1" alt="" width="26" height="26"><span>Rec In <b>Studio</b></span></span>
+        <p>Desenvolvido por <b>Netto Mello Videomaker</b> · <span id="versaoRodape">versão 0.22.1</span> · <a href="#comprar">Comprar</a></p>
     </div>
     <p class="aviso-legal">DaVinci Resolve é marca da Blackmagic Design. O Rec In Studio é um plugin independente,
         sem vínculo com a Blackmagic Design. TikTok, Instagram e YouTube são marcas dos seus donos.</p>
 </footer>
 
-<script src="assets/config.js?v=0.22.0"></script>
-<script src="assets/pix.js?v=0.22.0"></script>
-<script src="assets/site.js?v=0.22.0"></script>
+<script src="assets/config.js?v=0.22.1"></script>
+<script src="assets/pix.js?v=0.22.1"></script>
+<script src="assets/site.js?v=0.22.1"></script>
 </body>
 </html>

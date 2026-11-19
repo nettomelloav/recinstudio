@@ -323,17 +323,7 @@ h2 { font-size: clamp(28px, 3.6vw, 42px); line-height: 1.12; letter-spacing: -.0
 }
 .recurso h3 .novo { font-style: normal; font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: #05080b; background: linear-gradient(90deg, #38d9ff, #3b82ff); border-radius: 999px; padding: 2px 8px; margin-left: 6px; vertical-align: 3px; }
 
-/* ---------------------------------------------------------------- Rec In Studio: linha do tempo do destaque */
-.timeline-demo { position: relative; padding: 22px; border-radius: var(--raio); background: var(--painel); border: 1px solid var(--borda); overflow: hidden; }
-.timeline-demo .regua { display: flex; justify-content: space-between; font: 12px var(--mono); color: var(--suave); margin-bottom: 12px; }
-.timeline-demo .faixa { position: relative; height: 46px; margin: 8px 0; border-radius: 8px; background: var(--painel-2); display: flex; gap: 4px; padding: 5px; }
-.timeline-demo .faixa .rot { position: absolute; left: -2px; top: -18px; font: 11px var(--mono); color: var(--suave); }
-.timeline-demo .clipe { flex: var(--p, 1); border-radius: 6px; background: var(--c); opacity: .9; display: flex; align-items: center; padding: 0 10px; font: 600 12px var(--sans); color: #111; white-space: nowrap; overflow: hidden; }
-.timeline-demo .faixa + .faixa { margin-top: 26px; }
-.timeline-demo .cabeca { position: absolute; top: 34px; bottom: 16px; width: 2px; background: #ff3b30; box-shadow: 0 0 12px #ff3b30; left: 22px; animation: cabeca 7s linear infinite; }
-.timeline-demo .cabeca::before { content: ""; position: absolute; top: -6px; left: -6px; border: 7px solid transparent; border-top-color: #ff3b30; }
-@keyframes cabeca { from { left: 22px; } to { left: calc(100% - 24px); } }
-@media (prefers-reduced-motion: reduce) { .timeline-demo .cabeca { animation: none; left: 40%; } }
+/* ---------------------------------------------------------------- Rec In Studio: módulos */
 .modulos-lista { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 14px; }
 .modulo-card { position: relative; padding: 20px; border-radius: var(--raio); background: var(--painel); border: 1px solid var(--borda); overflow: hidden; }
 .modulo-card::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 3px; background: var(--c); }
@@ -343,12 +333,5 @@ h2 { font-size: clamp(28px, 3.6vw, 42px); line-height: 1.12; letter-spacing: -.0
 .modulo-card p { margin: 0; color: var(--suave); font-size: 15px; }
 .modulo-card ul { margin: 10px 0 0; padding-left: 18px; color: var(--suave); font-size: 14px; }
 .marca .logo-svg { width: 30px; height: 30px; }
-.timeline-demo .regua { margin-bottom: 26px; }
-.timeline-demo .faixa .rot { right: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 @media (max-width: 640px) {
-    .timeline-demo { padding: 14px; }
-    .timeline-demo .regua span:nth-child(2), .timeline-demo .regua span:nth-child(3) { display: none; }
-    .timeline-demo .faixa .rot { font-size: 10px; }
-    .timeline-demo .clipe { font-size: 10px; padding: 0 6px; }
-    .timeline-demo .cabeca { top: 30px; }
-}
+                    }
