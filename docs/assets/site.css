@@ -335,3 +335,15 @@ h2 { font-size: clamp(28px, 3.6vw, 42px); line-height: 1.12; letter-spacing: -.0
 .marca .logo-svg { width: 30px; height: 30px; }
 @media (max-width: 640px) {
                     }
+
+/* ---------------------------------------------------------------- Por dentro: galeria por módulo */
+.galeria-abas { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.galeria-aba {
+    font: 600 14px var(--sans); color: var(--suave); background: var(--painel); border: 1px solid var(--borda);
+    border-radius: 999px; padding: 8px 14px; cursor: pointer; transition: color .2s, border-color .2s, background .2s;
+}
+.galeria-aba .mono { font: 600 12px var(--mono); color: var(--c); margin-right: 4px; }
+.galeria-aba:hover { color: var(--texto); }
+.galeria-aba[aria-selected="true"] { color: var(--texto); border-color: var(--c); background: color-mix(in srgb, var(--c) 14%, var(--painel)); }
+.galeria-tela { max-width: 1080px; }
+@media (max-width: 640px) { .galeria-aba { font-size: 13px; padding: 7px 11px; } }

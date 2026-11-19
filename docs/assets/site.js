@@ -23,6 +23,13 @@
     if ($('#versao') && cfg.versao) $('#versao').textContent = 'v' + cfg.versao;
     if ($('#versaoRodape') && cfg.versao) $('#versaoRodape').textContent = 'versão ' + cfg.versao;
 
+    // ---------------------------------------------------------------- galeria "Por dentro": uma tela por módulo
+    const abasGaleria = document.querySelectorAll('.galeria-aba');
+    abasGaleria.forEach((b) => b.addEventListener('click', () => {
+        abasGaleria.forEach((x) => x.setAttribute('aria-selected', String(x === b)));
+        document.querySelectorAll('.galeria-tela').forEach((f) => { f.hidden = f.dataset.tela !== b.dataset.tela; });
+    }));
+
     // ---------------------------------------------------------------- WhatsApp do comprovante
     if ($('#linkWhats') && cfg.whatsapp) {
         const texto = `Olá! Paguei o Pix de R$ ${cfg.preco || '97,00'} do Rec In Studio. Segue o comprovante. Meu nome completo: `;
